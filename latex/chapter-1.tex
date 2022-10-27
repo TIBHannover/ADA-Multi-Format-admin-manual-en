@@ -1,0 +1,425 @@
+\documentclass{article}
+
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{graphicx}
+                
+\usepackage{calc}
+                
+\newlength{\imgwidth}
+                
+\newcommand\scaledgraphics[2]{%
+                
+\settowidth{\imgwidth}{\includegraphics{#1}}%
+                
+\setlength{\imgwidth}{\minof{\imgwidth}{#2\textwidth}}%
+                
+\includegraphics[width=\imgwidth,height=\textheight,keepaspectratio]{#1}%
+                
+}
+            
+\usepackage{tabu}
+\begin{document}
+
+\title{Publication Structure and Layout Design}
+
+\maketitle
+
+
+Note: Admin rights are needed to edit the parts described below. The admin area is located at /admin/ after your install top level domain. Ask support for access if you cannot access this area.
+
+
+\begin{tabu} to \textwidth { |X|X|X| }
+\hline
+
+
+
+Parts & Description & Comments
+ \\
+
+
+\textbf{Fidus Writer} &  & 
+ \\
+
+
+Document (Fidus Document) &  & 
+ \\
+
+
+Template (Document Template) &  & 
+ \\
+
+
+Element types (Template parts) &  & 
+ \\
+
+
+Document Style (CSS Styling) &  & 
+ \\
+
+
+Citation Styles & These use Citation Style Language (CSL) to configure citations. & 
+ \\
+
+
+Export Filters & These are filters for each format export. Only DOCX and ODT are exposed to admins. Other exporters are core application parts and have to be customm made. & 
+ \\
+
+
+Book (Fidus Book) &  & 
+ \\
+
+
+Book Style (CSS Styling) &  & 
+ \\
+
+
+Plugins  & These add functionality - like the Book or Open Journals System plugins. & 
+ \\
+
+
+\textbf{GitHub and GitLab} &  & 
+ \\
+
+
+ &  & 
+ \\
+
+
+\textbf{Vivliostyle} &  & 
+ \\
+
+
+ &  & 
+ \\
+\hline
+
+\end{tabu}
+
+
+
+
+\subsection{Fidus Writer}\label{H3001239}
+
+
+
+\subsubsection{Fidus Writer Document}\label{H5931126}
+
+
+
+\textbf{Fidus Document -} These can be considered the same as a DOCX word processing document.
+
+
+\subsubsection{Templates (Document Templates)}\label{H364719}
+
+
+
+\textbf{Templates (Document Templates) -} These are the parts of a document. Generally templates do not need to be created as the default template 'Standard Article' works for most publication.
+
+
+The templates have three main functions:
+
+\begin{itemize}
+\item Adding custom document parts 'Element types'
+
+
+\item Assiging CSS Classes to the parts for styling purposes
+
+
+\item Document settings: citation style, language, owner, etc
+
+
+\end{itemize}
+
+Template document parts 'Element types' are as follows. These parts have setting such as editable / not editable - so that fixed text can be added to documents.
+
+\begin{itemize}
+\item Heading
+
+
+\item Namelist (persons)
+
+
+\item Richtext
+
+
+\item Table
+
+
+\item Table of Contents (headers from the document)
+
+
+\item Separator
+
+
+\end{itemize}
+
+Creating and editing templates: Templates can be made in the Templates section or Duplicated in the Admin area (Template creation in the Admin area does not work at present Oct '22).
+
+
+A list of templates can be found in the Admin area.
+
+
+Important: It is usually better to create a template by duplicating a template in the admin area as then all the associated 'styles' and 'export' filters are automatically created. If you use the Template area to create a new template these will all have to be manually created and added.
+
+
+Note: Template IDs must be unique. If you find your templates not working check for mistaken duplicate IDs as this will stop templates working. Template ID should have no spaces in the name and only be letters and numbers. The same applies for all IDs.
+
+
+Note when creating or editing templates - drag 'Element types' to the right dark area to delete them.
+
+
+Ownership of templates and access rights, for groups as an example: All templates are available to all users.
+
+
+Changing a Fidus Documement template after document creation: This can only be done by admins in the admin area. Note: if field are removed and no longer exist - users will be give a red notice on their document asking if they want to copy existing content as a field ''Element type' has been removed.
+
+
+To change a document template - navigate to the Admin area > Documents > edit document > then at the bottom the document template can be changed.
+
+\begin{figure}
+\scaledgraphics{d82287ad-ca23-4e31-bba4-48f5c62c4703.png}{1}
+\caption*{Template Editor (Fidus Document Template Editor)}\label{F45095451}
+\end{figure}
+
+
+
+
+\begin{figure}
+\scaledgraphics{87596dc1-f0fb-4bd1-ac74-8f5f19f2ba84.png}{1}
+\caption*{Template list and steps for duplication.}\label{F78763991}
+\end{figure}
+
+\begin{figure}
+\scaledgraphics{3d3d12e4-5986-44e6-bbe5-6fd4f0ad11ba.png}{1}
+\caption*{Change the document template}\label{F64774031}
+\end{figure}
+
+
+\subsubsection{Styles}\label{H8639904}
+
+
+
+Styles allow for automated outputting with no manual intervention needed for as many publications as needed.
+
+
+Document styles and book styles are made the same way, just stored in different places.
+
+\begin{itemize}
+\item PDF, Paginated Web, e-book outputs - made with Fidus styles for document and book. Note book styles override document styles on outputing.
+
+
+\item Website output - this is a combination of the Fidus Book Style and Docsify style found in the Github Template Repo.
+
+
+\item DOCX and ODT styles need to be made using the DOCX and ODT markup languages - the existing export templates can be downloaded for reference. 
+
+
+\end{itemize}
+
+\subsubsection{How to make a style}\label{H2545068}
+
+
+
+Styles are loaded into Fidus Writer in the /admin/ area:
+
+
+/admin/style/documentstyle/
+
+
+/admin/book/bookstyle/
+
+
+Styles are made of the following:
+
+\begin{enumerate}
+\item CSS - pasted into the style editing area
+
+
+\item fonts - these need to be uploaded and named
+
+
+\item assets - images that will be used in the style as branding or static content. Do not upload edited content images here.
+
+
+\end{enumerate}
+\begin{figure}
+\scaledgraphics{3db5397f-81c3-4df8-95ea-53b51c5edad5.png}{1}
+\caption*{Style editing. This is for a document, but it is the same editing process for a Book Style.}\label{F98821261}
+\end{figure}
+
+
+You can preview styles directly from Fidus for documents and books.
+
+
+\subsubsection{CSS Styling resources}\label{H9519487}
+
+
+
+\href{https://vivliostyle.org/}{Vivliostyle} - This is the platform used in the pipeline for PDF and Paginated Web.
+
+
+\href{https://www.print-css.rocks/}{CSS Print Rocks} - Community resource comparing Paged Media CSS platforms.
+
+
+\href{https://docsify.js.org/#/}{Docsify styling}  - Docsify is a static site generator that we use to make the GitHub/Lab Pages websites.
+
+
+\subsubsection{Document Styles}\label{H4585161}
+
+
+
+Document styles need to be associated to a single document template in the style editing area. If you want to use a style on another document template a copy needs to me made.
+
+
+Note when you duplicate a Template it duplicates its associated style.
+
+
+\subsubsection{Book Styles}\label{H5506698}
+
+
+
+Book style involve using folios, page numbers, sections etc - Vivliostyle and CSS Print Rocks should be consulted for details. Also see the existing resources that have been created for reference.
+
+
+\textbf{Covers -} Covers can be made in several ways in the pipeline as well as multi-format posing the difficulty that each formats cover can be different.
+
+
+\textbf{Report001 Style Covers - }The cover for this style is made in the book CSS style. The e-book cover is only added later and is specific for the EPUB e-book export.
+
+
+The Report001 style has a partner style with branding included, you can switch between the two to see the difference.
+
+
+The cover design in this style aims to make use of the book information fields and place them on CSS generated artwork.
+
+
+\textbf{Report002} style contain branding assets, but apart from that is the same as Report001.
+
+
+See full CSS liked here: 
+
+
+\href{https://github.com/mrchristian/guide-en/blob/main/uhtml/css/report001.css#L118}{https://github.com/mrchristian/guide-en/blob/main/uhtml/css/report001.css\#L118}
+
+
+ - this creates the first page and the background
+
+
+@page :first \{
+
+
+size: 210mm 297mm;
+
+
+background-image: linear-gradient(\#2062af,\#20215E 80\%, \#fff 10\%);
+
+
+background-size: 210mm 297mm;
+
+
+display: flex;
+
+
+margin-top: 30mm;
+
+
+color: \#001668 ;
+
+
+page-break-after: always;
+
+
+@bottom-left \{ content: normal; \}
+
+
+@bottom-center \{ content: normal; \}
+
+
+@bottom-right \{ content: normal; \}
+
+
+@top-left \{ content: normal; \}
+
+
+@top-right \{ content: normal;\}
+
+
+@top-center \{ content: normal;\}
+
+
+\}
+
+
+Then the following writes the content into the first page: 
+
+
+\href{https://github.com/mrchristian/guide-en/blob/main/uhtml/css/report001.css#L118}{https://github.com/mrchristian/guide-en/blob/main/uhtml/css/report001.css}\href{https://github.com/mrchristian/styles-CSS/blob/main/report001.css#L355}{\#L355} 
+
+
+div.titlepage \{
+
+
+Note: Images are now added to the style assets and will have local paths /media/image.png etc.
+
+
+And not external link like:
+
+
+/*background-image: url("https://raw.githubusercontent.com/mrchristian/quick-start/05c5b3dd2bdbdfd785bb158752e3bd3c7b415c66/assets/logo-gfm.png");
+
+
+The content comes from the UHTML file where the book information has been written out. Normally this would appear in page 2 if the CSS were not controlling the info.
+
+
+\href{https://github.com/mrchristian/guide-en/blob/main/uhtml/index.html#L94}{https://github.com/mrchristian/guide-en/blob/main/uhtml/index.html\#L94}
+
+
+\subsubsection{Book Styles - Website}\label{H9324092}
+
+
+
+This is where Docsify is used.
+
+
+Customisations are made on the Git repo at this path /blob/main/assets/css/theme-custom.css
+
+
+Here is an example:
+
+
+\href{https://github.com/mrchristian/guide-en/blob/main/assets/css/theme-custom.css}{https://github.com/mrchristian/guide-en/blob/main/assets/css/theme-custom.css}
+
+
+Docsify can be run locally for theme development.
+
+
+\subsection{GitHub and GitLab}\label{H4369621}
+
+
+
+Template repos should be made and used. These contain the parts that Fidus does not make and then Fidus writes its content into the template repo. merging the two parts to create your output publication.
+
+
+See example template:
+
+
+\href{https://github.com/TIBHannover/ADA-Book-Template}{https://github.com/TIBHannover/ADA-Book-Template}
+
+
+\subsection{Viviliostyle}\label{H3472256}
+
+
+
+Vivliostyle is used for Paginate Web and PDF generation.
+
+
+See all instructions on the \href{https://vivliostyle.org/getting-started/}{Vivliostyle website}.
+
+
+Vivliostyle can be run locally for theme development.
+
+
+
+
+\end{document}
