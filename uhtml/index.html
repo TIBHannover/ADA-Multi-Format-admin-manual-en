@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <title>Pipeline Admin Manual</title>
@@ -99,10 +99,10 @@
     </div>
     <div class="copyrightpage frontmatter">
       <p>Published by: Digital Services</p>
-      <p>Last Updated: 2022-10-26</p>
+      <p>Last updated: 2022-10-31</p>
       <p>Created: 2022-10-26</p>
-      <p>Language: English</p>
-      <p>Created by: Raquel Perez de Eulate</p>
+      <p>Language: English (United Kingdom)</p>
+      <p>Created by: User Name</p>
     </div>
     <div class="tocpage frontmatter">
       <nav role="doc-toc">
@@ -139,24 +139,24 @@
                       </li>
                       <li>
                         <a href="#H9519487">
-                          CSS Styling resources
+                          CSS styling resources
                         </a>
                       </li>
                     </ol>
                   </li>
                   <li>
                     <a href="#H4585161">
-                      Document Styles
+                      Document styles
                     </a>
                   </li>
                   <li>
                     <a href="#H5506698">
-                      Book Styles
+                      Book styles
                     </a>
                     <ol>
                       <li>
                         <a href="#H9324092">
-                          Book Styles - Website
+                          Book styles - Website
                         </a>
                       </li>
                     </ol>
@@ -177,18 +177,98 @@
           </li>
           <li>
             <a href="#_2_0">
-              Install, Admin
+              Install and Admin
             </a>
             <ol>
               <li>
                 <a href="#H7050896">
                   Installation
                 </a>
+                <ol>
+                  <li>
+                    <a href="#H3140131">
+                      Fidus Writer
+                    </a>
+                    <ol>
+                      <li>
+                        <a href="#H9114602">
+                          Configuring for Books
+                        </a>
+                      </li>
+                    </ol>
+                  </li>
+                  <li>
+                    <a href="#H3941354">
+                      Tips
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#H5723487">
+                      GitLab Community Edition (CE)
+                    </a>
+                  </li>
+                </ol>
               </li>
               <li>
                 <a href="#H3191967">
                   Admin
                 </a>
+                <ol>
+                  <li>
+                    <a href="#H2220368">
+                      Fidus Writer
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#H9776890">
+                      GitLab Community Edition CE
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#H1239776">
+                      Vivliostyles
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#H7492401">
+                      Docsify
+                    </a>
+                  </li>
+                </ol>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <a href="#_3_0">
+              About the Admin Manual
+            </a>
+            <ol>
+              <li>
+                <a href="#H8229716">
+                  Description
+                </a>
+              </li>
+              <li>
+                <a href="#H5465299">
+                  Contributors
+                </a>
+              </li>
+              <li>
+                <a href="#H2281570">
+                  Technical credits
+                </a>
+                <ol>
+                  <li>
+                    <a href="#H2431584">
+                      Layout design style
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#H649993">
+                      Fonts
+                    </a>
+                  </li>
+                </ol>
               </li>
             </ol>
           </li>
@@ -197,7 +277,7 @@
     </div>
     <div class="article-part article-title" id="_1_0">Publication Structure and Layout Design</div>
     <div class="article-part article-richtext article-body">
-      <p>Note: Admin rights are needed to edit the parts described below. The admin area is located at /admin/ after your install top level domain. Ask support for access if you cannot access this area.</p>
+      <p>Note: Admin rights are needed to edit the parts described below. The admin area is located at /admin/ after your installation top level domain. Ask support for access if you cannot access this area.</p>
       <table id="T76273451" class="table-100 table-center table-fixed" data-width="100" data-aligned="center" data-layout="fixed" data-category="none">
         <tbody>
           <tr>
@@ -282,7 +362,7 @@
               <p>Export Filters</p>
             </td>
             <td>
-              <p>These are filters for each format export. Only DOCX and ODT are exposed to admins. Other exporters are core application parts and have to be customm made.</p>
+              <p>These are filters for each format export. Only DOCX and ODT are exposed to admins. Other exporters are core application parts and have to be custom-made.</p>
             </td>
             <td>
               <p></p>
@@ -323,6 +403,17 @@
           </tr>
           <tr>
             <td>
+              <p>Output (Formats)</p>
+            </td>
+            <td>
+              <p>Website; Paginated Web; PDF; Print-on-Demand (PDF); e-Book</p>
+            </td>
+            <td>
+              <p>Note: Other file formats are available for outputting.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
               <p><strong>GitHub and GitLab</strong></p>
             </td>
             <td>
@@ -334,10 +425,10 @@
           </tr>
           <tr>
             <td>
-              <p></p>
+              <p>Repo template</p>
             </td>
             <td>
-              <p></p>
+              <p>This is a template for the repository. It contains Docsify resources, and JSON configuration to link other formats.</p>
             </td>
             <td>
               <p></p>
@@ -356,10 +447,10 @@
           </tr>
           <tr>
             <td>
-              <p></p>
+              <p>Paginated Media CSS</p>
             </td>
             <td>
-              <p></p>
+              <p>Vivliostyle is run from inside Fidus Writer, as a stand-alone app, and locally.</p>
             </td>
             <td>
               <p></p>
@@ -370,16 +461,16 @@
       <p></p>
       <h2 id="H3001239">Fidus Writer</h2>
       <h3 id="H5931126">Fidus Writer Document</h3>
-      <p><strong>Fidus Document -</strong> These can be considered the same as a DOCX word processing document.</p>
+      <p><strong>Fidus Document -</strong> These can be considered to be similar to DOCX word processing document. Fidus Documents are JSON files and can be exported and imported between versions of Fidus Writer only.</p>
       <h3 id="H364719">Templates (Document Templates)</h3>
       <p><strong>Templates (Document Templates) -</strong> These are the parts of a document. Generally templates do not need to be created as the default template 'Standard Article' works for most publication.</p>
       <p>The templates have three main functions:</p>
       <ul id="L84260861">
         <li>
-          <p>Adding custom document parts 'Element types'</p>
+          <p>Adding custom document parts 'Element types': headers, rich text, separators, etc.</p>
         </li>
         <li>
-          <p>Assiging CSS Classes to the parts for styling purposes</p>
+          <p>Assigning CSS Classes to the 'Element types' for styling purposes</p>
         </li>
         <li>
           <p>Document settings: citation style, language, owner, etc</p>
@@ -411,8 +502,8 @@
       <p>Important: It is usually better to create a template by duplicating a template in the admin area as then all the associated 'styles' and 'export' filters are automatically created. If you use the Template area to create a new template these will all have to be manually created and added.</p>
       <p>Note: Template IDs must be unique. If you find your templates not working check for mistaken duplicate IDs as this will stop templates working. Template ID should have no spaces in the name and only be letters and numbers. The same applies for all IDs.</p>
       <p>Note when creating or editing templates - drag 'Element types' to the right dark area to delete them.</p>
-      <p>Ownership of templates and access rights, for groups as an example: All templates are available to all users.</p>
-      <p>Changing a Fidus Documement template after document creation: This can only be done by admins in the admin area. Note: if field are removed and no longer exist - users will be give a red notice on their document asking if they want to copy existing content as a field ''Element type' has been removed.</p>
+      <p>Ownership of templates and access rights, for groups as an example: If a template is assigned to a user it is private and only accessible to documents the user makes and shares. If not assigned a user it is available to all users in the Template area.</p>
+      <p>Changing a Fidus Document template after document creation: This can only be done by admins in the admin area. Note: if field are removed and no longer exist - users will be give a red notice on their document asking if they want to copy existing content as a field ''Element type' has been removed.</p>
       <p>To change a document template - navigate to the Admin area &gt; Documents &gt; edit document &gt; then at the bottom the document template can be changed.</p>
       <figure id="F45095451" class="aligned-center image-width-100" data-aligned="center" data-width="100" data-category="none"><img src="images/d82287ad-ca23-4e31-bba4-48f5c62c4703.png">
         <figcaption><span class="label"></span><span class="text">Template Editor (Fidus Document Template Editor)</span></figcaption>
@@ -427,52 +518,73 @@
       <h3 id="H8639904">Styles</h3>
       <p>Styles allow for automated outputting with no manual intervention needed for as many publications as needed.</p>
       <p>Document styles and book styles are made the same way, just stored in different places.</p>
+      <p>The main CSS Styles do not cover all output formats. Below is a list of which output formats are controlled by which style - there are three style types: CSS Styles, Docsify CSS Style, and ODT/DOCX Styles.</p>
+      <p>In the documentation we mainly cover the CSS Styling used in Fidus Writer:</p>
       <ul id="L21954301">
         <li>
-          <p>PDF, Paginated Web, e-book outputs - made with Fidus styles for document and book. Note book styles override document styles on outputing.</p>
+          <p>CSS Styles: Output formats - PDF, Paginated Web, e-book outputs - made with Fidus styles for document and book. Note, book styles override document styles on outputting.</p>
         </li>
         <li>
-          <p>Website output - this is a combination of the Fidus Book Style and Docsify style found in the Github Template Repo.</p>
+          <p>Docsify CSS Style: Output formats - Website output - this is a combination of the Fidus Book Style and Docsify style found in the GitHub Template Repo.</p>
         </li>
         <li>
-          <p>DOCX and ODT styles need to be made using the DOCX and ODT markup languages - the existing export templates can be downloaded for reference. </p>
+          <p>ODT/DOCX Styles: Output formats - DOCX and ODT - styles need to be made using the DOCX and ODT markup languages - the existing export templates can be downloaded for reference. </p>
+        </li>
+        <li>
+          <p>LaTeX and JATS are not covered here.</p>
         </li>
       </ul>
       <h4 id="H2545068">How to make a style</h4>
       <p>Styles are loaded into Fidus Writer in the /admin/ area:</p>
-      <p>/admin/style/documentstyle/</p>
-      <p>/admin/book/bookstyle/</p>
+      <ul id="L97865641">
+        <li>
+          <p>Documents - /admin/style/documentstyle/</p>
+        </li>
+        <li>
+          <p>Books - /admin/book/bookstyle/</p>
+        </li>
+      </ul>
       <p>Styles are made of the following:</p>
       <ol id="L72206401">
         <li>
           <p>CSS - pasted into the style editing area</p>
         </li>
         <li>
-          <p>fonts - these need to be uploaded and named</p>
+          <p>Fonts - these need to be uploaded and named</p>
         </li>
         <li>
-          <p>assets - images that will be used in the style as branding or static content. Do not upload edited content images here.</p>
+          <p>Assets - images that will be used in the style as branding or static content. Do not upload edited content images here.</p>
         </li>
       </ol>
       <figure id="F98821261" class="aligned-center image-width-100" data-aligned="center" data-width="100" data-category="none"><img src="images/3db5397f-81c3-4df8-95ea-53b51c5edad5.png">
         <figcaption><span class="label"></span><span class="text">Style editing. This is for a document, but it is the same editing process for a Book Style.</span></figcaption>
       </figure>
       <p>You can preview styles directly from Fidus for documents and books.</p>
-      <h4 id="H9519487">CSS Styling resources</h4>
-      <p><a href="https://vivliostyle.org/" title="https://vivliostyle.org/">Vivliostyle</a> - This is the platform used in the pipeline for PDF and Paginated Web.</p>
-      <p><a href="https://www.print-css.rocks/" title="https://www.print-css.rocks/">CSS Print Rocks</a> - Community resource comparing Paged Media CSS platforms.</p>
-      <p><a href="https://docsify.js.org/#/" title="https://docsify.js.org/#/">Docsify styling</a> - Docsify is a static site generator that we use to make the GitHub/Lab Pages websites.</p>
-      <h3 id="H4585161">Document Styles</h3>
+      <p>Note: Multilingual publications. CSS can contain content parts when the system cannot deliver content. These parts will usually be thing like branding or labels. Examples are page label 'Page 4/26' as opposed to 'Blatt or Seite - 4/26'. In these exceptions style copies per language will need to be made.</p>
+      <p>Margins and recto/verso issues - Layouts for targetted at documents or book styles. It is important to consider the difference between the needs of the two layouts. As an example in books there is a need to have different recto and verso left margins because of gutter being bound, also running headers, and chapter starts, as well as designated recto/verso front matter conventions.</p>
+      <h4 id="H9519487">CSS styling resources</h4>
+      <ul id="L44065641">
+        <li>
+          <p><a href="https://vivliostyle.org/" title="https://vivliostyle.org/">Vivliostyle</a> - This is the platform used in the pipeline for PDF and Paginated Web.</p>
+        </li>
+        <li>
+          <p><a href="https://www.print-css.rocks/" title="https://www.print-css.rocks/">CSS Print Rocks</a> - Community resource comparing Paged Media CSS platforms.</p>
+        </li>
+        <li>
+          <p><a href="https://docsify.js.org/#/" title="https://docsify.js.org/#/">Docsify styling</a> - Docsify is a static site generator that we use to make the GitHub/Lab Pages websites.</p>
+        </li>
+      </ul>
+      <h3 id="H4585161">Document styles</h3>
       <p>Document styles need to be associated to a single document template in the style editing area. If you want to use a style on another document template a copy needs to me made.</p>
-      <p>Note when you duplicate a Template it duplicates its associated style.</p>
-      <h3 id="H5506698">Book Styles</h3>
-      <p>Book style involve using folios, page numbers, sections etc - Vivliostyle and CSS Print Rocks should be consulted for details. Also see the existing resources that have been created for reference.</p>
+      <p>Note when you duplicate a Template it duplicates its associated style (it is more efficient to use the duplication process).</p>
+      <h3 id="H5506698">Book styles</h3>
+      <p>Book style involve using folios, page numbers, sections etc. - Vivliostyle and CSS Print Rocks should be consulted for details. Also see the existing resources that have been created for reference.</p>
       <p><strong>Covers -</strong> Covers can be made in several ways in the pipeline as well as multi-format posing the difficulty that each formats cover can be different.</p>
-      <p><strong>Report001 Style Covers - </strong>The cover for this style is made in the book CSS style. The e-book cover is only added later and is specific for the EPUB e-book export.</p>
-      <p>The Report001 style has a partner style with branding included, you can switch between the two to see the difference.</p>
-      <p>The cover design in this style aims to make use of the book information fields and place them on CSS generated artwork.</p>
-      <p><strong>Report002</strong> style contain branding assets, but apart from that is the same as Report001.</p>
-      <p>See full CSS liked here: </p>
+      <p><strong>Report001 Style Covers - </strong>The cover for this style is made in the book CSS style. The e-book cover is only added later and is specific for the EPUB e-book export as technically it requires an image file.</p>
+      <p>The Report001 style has a partner style Report002 with branding included, you can switch between the two to see the difference.</p>
+      <p>The cover design in this style aims to make use of the book information fields and place them over the CSS generated artwork, this way the style can be used for a publication series with no manual intervention.</p>
+      <p><strong>Report002</strong> <strong>-</strong> The style contain branding assets, but apart from that is the same as Report001.</p>
+      <p>See full CSS linked here: </p>
       <p><a href="https://github.com/mrchristian/guide-en/blob/main/uhtml/css/report001.css#L118" title="https://github.com/mrchristian/guide-en/blob/main/uhtml/css/report001.css#L118">https://github.com/mrchristian/guide-en/blob/main/uhtml/css/report001.css#L118</a></p>
       <p> - this creates the first page and the background</p>
       <p>@page :first {</p>
@@ -498,29 +610,141 @@
       <p>/*background-image: url("https://raw.githubusercontent.com/mrchristian/quick-start/05c5b3dd2bdbdfd785bb158752e3bd3c7b415c66/assets/logo-gfm.png");</p>
       <p>The content comes from the UHTML file where the book information has been written out. Normally this would appear in page 2 if the CSS were not controlling the info.</p>
       <p><a href="https://github.com/mrchristian/guide-en/blob/main/uhtml/index.html#L94" title="https://github.com/mrchristian/guide-en/blob/main/uhtml/index.html#L94">https://github.com/mrchristian/guide-en/blob/main/uhtml/index.html#L94</a></p>
-      <h4 id="H9324092">Book Styles - Website</h4>
+      <h4 id="H9324092">Book styles - Website</h4>
       <p>This is where Docsify is used.</p>
-      <p>Customisations are made on the Git repo at this path /blob/main/assets/css/theme-custom.css</p>
+      <p>Customizations are made on the Git repo at this path /blob/main/assets/css/theme-custom.css</p>
       <p>Here is an example:</p>
       <p><a href="https://github.com/mrchristian/guide-en/blob/main/assets/css/theme-custom.css" title="https://github.com/mrchristian/guide-en/blob/main/assets/css/theme-custom.css">https://github.com/mrchristian/guide-en/blob/main/assets/css/theme-custom.css</a></p>
       <p>Docsify can be run locally for theme development.</p>
+      <p>Note: If you are making a multilingual publication for some small parts like 'labels' in the table of contents menu you might need to make a template per language as parts are hardcoded, for example 'Contents'.</p>
       <h2 id="H4369621">GitHub and GitLab</h2>
-      <p>Template repos should be made and used. These contain the parts that Fidus does not make and then Fidus writes its content into the template repo. merging the two parts to create your output publication.</p>
+      <p>Repo Templates should be made and used. These contain the parts that Fidus does not make and then Fidus writes its content into the template repo, merging the two parts to create your output publication.</p>
       <p>See example template:</p>
       <p><a href="https://github.com/TIBHannover/ADA-Book-Template" title="https://github.com/TIBHannover/ADA-Book-Template">https://github.com/TIBHannover/ADA-Book-Template</a></p>
+      <p>As noted there may be a need to have language specific Repo Templates.</p>
       <h2 id="H3472256">Viviliostyle</h2>
-      <p>Vivliostyle is used for Paginate Web and PDF generation.</p>
+      <p>Vivliostyle is used for Paginate Web and PDF generation using Paginated CSS to W3C standards.</p>
       <p>See all instructions on the <a href="https://vivliostyle.org/getting-started/" title="https://vivliostyle.org/getting-started/">Vivliostyle website</a>.</p>
       <p>Vivliostyle can be run locally for theme development.</p>
+    </div>
+    <section class="fnlist" role="doc-footnotes"></section>
+    <div class="article-part article-title" id="_2_0">Install and Admin</div>
+    <div class="article-part article-richtext article-body">
+      <p>Note, all software used is open source and compliant with <a href="https://opensource.org/licenses" title="https://opensource.org/licenses">OSI open sources licences</a>.</p>
+      <h2 id="H7050896">Installation</h2>
+      <h3 id="H3140131">Fidus Writer</h3>
+      <p>Fidus Writer can be installed in a variety of locations: secure cloud, public service cloud, dedicated machines, in a local office network, on a Raspberry Pi (micro-computer), or on a local personal computer.</p>
+      <p>Download and install instructions are on Fidus Writer GitHub Wiki: </p>
+      <ul id="L56137221">
+        <li>
+          <p><a href="https://github.com/fiduswriter/fiduswriter/wiki" title="https://github.com/fiduswriter/fiduswriter/wiki">https://github.com/fiduswriter/fiduswriter/wiki</a></p>
+        </li>
+      </ul>
+      <p>It is recommended to use the Ubuntu Snap installation process as it offers a way to get constant updates.</p>
+      <ul id="L6351101">
+        <li>
+          <p><a href="https://github.com/fiduswriter/fiduswriter/wiki/Running-Fidus-Writer-on-Ubuntu-snap" title="https://github.com/fiduswriter/fiduswriter/wiki/Running-Fidus-Writer-on-Ubuntu-snap">Ubuntu Snap install</a></p>
+        </li>
+      </ul>
+      <ul id="L50986521">
+        <li>
+          <p><a href="https://github.com/fiduswriter/fiduswriter/wiki" title="https://github.com/fiduswriter/fiduswriter/wiki">Snap configuration is here</a></p>
+        </li>
+      </ul>
+      <h4 id="H9114602">Configuring for Books</h4>
+      <p>To create Books additional plugins are needed, all plugins can be found here on GitHub:</p>
+      <ul id="L42685381">
+        <li>
+          <p><a href="https://github.com/fiduswriter" title="https://github.com/fiduswriter">All plugins</a></p>
+        </li>
+      </ul>
+      <p>Plugins needed for books:</p>
+      <ul id="L11548251">
+        <li>
+          <p><a href="https://github.com/fiduswriter/fiduswriter-books" title="https://github.com/fiduswriter/fiduswriter-books">fiduswriter-books</a></p>
+        </li>
+        <li>
+          <p><a href="https://github.com/fiduswriter/fiduswriter-gitrepo-export" title="https://github.com/fiduswriter/fiduswriter-gitrepo-export">fiduswriter-gitrepo-export</a></p>
+        </li>
+        <li>
+          <p><a href="https://github.com/fiduswriter/fiduswriter-citation-api-import" title="https://github.com/fiduswriter/fiduswriter-citation-api-import">fiduswriter-citation-api-import</a> (optional)</p>
+        </li>
+      </ul>
+      <h3 id="H3941354">Tips</h3>
+      <ul id="L57562931">
+        <li>
+          <p>An SMTP account is needed for transactional emails.</p>
+        </li>
+        <li>
+          <p>Up the file upload limit to 20 MB in case of needing to upload large Fidus Writer JSON file.</p>
+        </li>
+        <li>
+          <p>ADMIN area: Fidus Writer has a admin area which is not visible to regular users in the interface - visit /admin/ here all admin functions can be carried out.</p>
+        </li>
+        <li>
+          <p>Roles: Fidus Writer has three roles: Admin, Staff, Users</p>
+        </li>
+        <li>
+          <p>Flat pages - pages for data privacy, imprint can be found here /admin/flatpages/flatpage/ </p>
+        </li>
+        <li>
+          <p>Connect to GitHub and GitLab - add details here /admin/socialaccount/socialapp/</p>
+        </li>
+        <li>
+          <p>GDPR - Fidus Writer is GDPR-compliant. As default users have to give permission to create account and accept document invites. If you are running Fidus Writer for use in a private office where all users have agreed to GDPR and privacy conditions then these conditions can be relaxed.</p>
+        </li>
+        <li>
+          <p>User registration - this can be set as open, or by invite only. Also, via social accounts, OAuth, can be used. With others added if special plugins are written.</p>
+        </li>
+        <li>
+          <p>Social accounts - these can be added for authentication.</p>
+        </li>
+        <li>
+          <p>Groups - Groups are covered in the Quick Start Guide.</p>
+        </li>
+      </ul>
+      <h3 id="H5723487">GitLab Community Edition (CE)</h3>
+      <p>Download and instructions are here: <a href="https://gitlab.com/rluna-gitlab/gitlab-ce" title="https://gitlab.com/rluna-gitlab/gitlab-ce">https://gitlab.com/rluna-gitlab/gitlab-ce</a></p>
+      <h2 id="H3191967">Admin</h2>
+      <h3 id="H2220368">Fidus Writer</h3>
+      <p>Most admin functions can be found in /admin/</p>
+      <p>Fidus writer has three types of user: users, staff, and admin. Admin user rights can be given to publication managers.</p>
+      <p>User registration has three settings: open, social logins using a third party authentication, and invite only.</p>
+      <p>Groups and ACLs for content currently (Nov 2022) happens through the ownership of files: templates, documents, and books by single users. Files can be reassigned ownership in the admin area. In 2023 full groups and sharing features will be added.</p>
+      <p>Note: Fidus loads a lot of the application over into the browser and so force browser refresh is needed to update many processes.</p>
+      <p>Documents can worked on offline and on reconnect Fidus will attempt to resolve what the last edit was and update the documents on the server.</p>
+      <p>Git - If a user is granted access to a book with write permissions, and write permissions to the Git repo they can output to the repo.</p>
+      <h3 id="H9776890">GitLab Community Edition CE</h3>
+      <p>See GitLab CE instructions - <a href="https://gitlab.com/rluna-gitlab/gitlab-ce" title="https://gitlab.com/rluna-gitlab/gitlab-ce">https://gitlab.com/rluna-gitlab/gitlab-ce</a></p>
+      <h3 id="H1239776">Vivliostyles</h3>
+      <p>Vivliosytle has full documentation online - <a href="https://vivliostyle.org/documents/" title="https://vivliostyle.org/documents/">https://vivliostyle.org/documents/</a></p>
+      <h3 id="H7492401">Docsify</h3>
+      <p>Docsify has detailed instructions online - <a href="https://docsify.js.org/#/" title="https://docsify.js.org/#/">https://docsify.js.org/#/</a></p>
+      <p></p>
       <p></p>
     </div>
     <section class="fnlist" role="doc-footnotes"></section>
-    <div class="article-part article-title" id="_2_0">Install, Admin</div>
+    <div class="article-part article-title" id="_3_0">About the Admin Manual</div>
     <div class="article-part article-richtext article-body">
-      <h2 id="H7050896">Installation</h2>
-      <p></p>
-      <h2 id="H3191967">Admin</h2>
-      <p></p>
+      <p>Admin Manual – A Publishing Pipeline</p>
+      <p>English version</p>
+      <p>Pre-release v0.1</p>
+      <p>Date: 2022</p>
+      <p>Creative Commons Attribution-ShareAlike 4.0 International&nbsp;<a href="https://creativecommons.org/licenses/by-sa/4.0/">(CC BY-SA 4.0)</a>.</p>
+      <h2 id="H8229716">Description</h2>
+      <p>The Admin Manual is intended as a short intorduction to installing the pipeline and administrative functions, as well as covering the content structure and how to create styles in Fidus Writer.</p>
+      <p>The pipeline connects <a href="https://www.fiduswriter.org/" title="https://www.fiduswriter.org/">Fidus Writer</a> an online word processor with GitLab or GitHub for versioned storage and uses <a href="https://vivliostyle.org/" title="https://vivliostyle.org/">Vivliosyle</a> for CSS Typesetting. The pipeline project is based on open source work of <a href="https://github.com/TIBHannover/ADA" title="https://github.com/TIBHannover/ADA">ADA Semantic Publishing Pipeline</a> at the Open Science Lab, TIB (Hannover).</p>
+      <p>All software used with the exception of GitHub is open source.</p>
+      <h2 id="H5465299">Contributors</h2>
+      <p>Author(s): Simon Worthington - ORCID <a href="https://orcid.org/0000-0002-8579-9717" title="https://orcid.org/0000-0002-8579-9717">0000-0002-8579-9717</a></p>
+      <h2 id="H2281570">Technical credits</h2>
+      <h3 id="H2431584">Layout design style</h3>
+      <p>Publication layout design style 'Report 001' is based on CSS Template from <strong>Interpunct</strong> – <em>full stack graphic design,</em> <a href="https://interpunct.dev/" title="https://interpunct.dev/">Interpunct.dev</a>. GNU General Public License (<a href="https://www.gnu.org/licenses/gpl-3.0.html">GPLv3</a>).</p>
+      <h3 id="H649993">Fonts</h3>
+      <p>All fonts are Open Licence Fonts.</p>
+      <p>Headers - <a href="https://fonts.google.com/specimen/Fira+Sans+Condensed" title="https://fonts.google.com/specimen/Fira+Sans+Condensed">Fira Sans Condensed</a>. These fonts are licensed under the&nbsp;<a href="https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;id=OFL">Open Font License</a>. This project is led by Carrois, a type foundry based in Berlin. To contribute, see <a href="https://github.com/mozilla/Fira" title="https://github.com/mozilla/Fira">github.com/mozilla/Fira</a>.</p>
+      <p>Body - <a href="https://fonts.google.com/specimen/Fira+Sans" title="https://fonts.google.com/specimen/Fira+Sans">Fira Sans</a>. These fonts are licensed under the&nbsp;<a href="https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;id=OFL">Open Font License</a>. This project is led by&nbsp;<a href="https://carrois.com/">Carrois</a>, a type foundry based in Berlin. To contribute, see&nbsp;<a href="https://github.com/mozilla/Fira">github.com/mozilla/Fira</a> </p>
+      <p>Logo - <a href="https://fonts.google.com/specimen/Source+Sans+Pro" title="https://fonts.google.com/specimen/Source+Sans+Pro">Source Sans Pro</a>. These fonts are licensed under the&nbsp;<a href="https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;id=OFL">Open Font License</a>. Source® Sans Pro, Adobe's first open source typeface family, was designed by Paul D. Hunt. </p>
     </div>
     <section class="fnlist" role="doc-footnotes"></section>
   </body>
